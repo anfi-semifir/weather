@@ -19,5 +19,9 @@ jobs:
         run: npm run test
       - name: code coverage
         run: npm run cover
-
+      - name: récuperation des resultats de tests 
+        uses: actions/upload-artifact@v3
+        with:
+          name: result-test
+          path: ./reports
           
